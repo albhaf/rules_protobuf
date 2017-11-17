@@ -6,9 +6,9 @@ DEPS = {
     # from here into 'com_google_grpc'.
     "com_google_grpc_base": {
         "rule": "http_archive",
-        "url": "https://github.com/grpc/grpc/archive/ca87867579580928ca4c9fdf97051fa25bf1d386.zip", # Sep 19, 2017 (PR#12571)
-        "sha256": "d3794ca4ff7b12635bd4972bb9478f1d11e478305490b96469eb3a47e50b1768",
-        "strip_prefix": "grpc-ca87867579580928ca4c9fdf97051fa25bf1d386",
+        "url": "https://github.com/grpc/grpc/archive/c35a660300610c14910dfc6d006b86eff0d2039d.zip",
+        "sha256": "b18293ccbc00aaaf6d5470e8b8470870147723f223315d4c08330ebcb8707836",
+        "strip_prefix": "grpc-c35a660300610c14910dfc6d006b86eff0d2039d",
     },
 
     "com_google_grpc": {
@@ -89,6 +89,13 @@ DEPS = {
         "url": "https://github.com/google/googletest/archive/7c6353d29a147cad1c904bf2957fd4ca2befe135.zip", # master Sept 1 2017
         "sha256": "f87029f647276734ef076785f76652347993b6d13ac1cbb2d2e976e16d2f8137",
         "strip_prefix": "googletest-7c6353d29a147cad1c904bf2957fd4ca2befe135",
+    },
+
+    "com_google_absl": {
+        "rule": "http_archive",
+        "url": "https://github.com/abseil/abseil-cpp/archive/cc4bed2d74f7c8717e31f9579214ab52a9c9c610.tar.gz",
+        "sha256": "f1a7349f88d2846210c42e2f7271dabeee404c2a3b4198e34a797993e3569b03",
+        "strip_prefix": "abseil-cpp-cc4bed2d74f7c8717e31f9579214ab52a9c9c610",
     },
 
 }

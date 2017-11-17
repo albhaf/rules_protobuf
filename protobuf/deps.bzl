@@ -30,6 +30,12 @@ DEPS = {
         "actual": "@com_google_protobuf//:protobuf",
     },
 
+    # grpc++ expects "//external:protobuf_headers"
+    "protobuf_headers": {
+        "rule": "bind",
+        "actual": "@com_google_protobuf//:protobuf_headers",
+    },
+
     # grpc++ expects "//external:protobuf_clib"
     "protobuf_clib": {
         "rule": "bind",
